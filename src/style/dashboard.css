@@ -1,0 +1,565 @@
+@import "./variables.css";
+/* 
+=================
+=================
+DASHBOARD 
+=================
+=================
+*/
+
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--lighter-blue);
+
+}
+
+/* 
+=================
+=================
+END OD DASHBOARD 
+=================
+=================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=================
+=================
+DASHBOARD NAV
+=================
+=================
+*/
+
+
+.dashboardNav {
+    box-shadow: inset 2px 0 20px #00000030;
+    z-index: -1;
+    position: fixed;
+    background: #fff;
+    overflow-y: auto;
+    z-index: 999;
+    height: 100vh;
+    width: 0;
+    transition: width .3s ease;
+}
+
+.dashboard .dashboardNav::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.dashboardNavCon{
+    padding-left: 2rem;
+}
+
+
+
+
+.top-left {
+    display: flex;
+    gap: 1.5rem;
+    margin: 2rem;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.top-left .left {
+    width: 30%;
+}
+
+
+.top-left .right span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    text-transform: capitalize;
+}
+
+.listItem {
+    margin-bottom: .7rem;
+    text-align: center;
+}
+
+
+.listItem .listBtn:hover,
+.listItem a:hover,
+.listItem a:focus {
+    background: var(--light-blue);
+    color: var(--dark-blue);
+}
+
+.listItem .listBtn {
+    color: #333;
+    border-radius: 8px;
+}
+
+
+
+.dashboardNav .navIcon {
+    margin-right: 10px;
+}
+
+
+
+.smallDashboardNav {
+    padding-top: 5rem;
+    background-color: #fff;
+    width: 10%;
+    box-shadow: 2px 0 3px #00000020;
+    z-index: -1;
+    position: fixed;
+    background: #fff;
+    overflow-y: auto;
+    z-index: 999;
+    height: 100vh;
+}
+
+.smallDashboardNav .listItem {
+    padding: 0;
+}
+
+.smallDashboardNav a {
+    display: block;
+    box-shadow: 2px 0 3px #00000020;
+    padding: 1rem 0;
+    margin-bottom: 5px;
+
+}
+
+.smallDashboardNav a:hover {
+    background: var(--light-blue);
+}
+
+.smallDashboardNav .listButton {
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+
+/* 
+=====================
+=====================
+END OF DASHBOARD NAV
+=====================
+=====================
+*/
+
+
+
+/* 
+=====================
+=====================
+DASHBOARD PAGES
+=====================
+=====================
+*/
+
+
+
+
+
+.dashboard-pages {
+    padding: 1rem;
+    width: 93%;
+    width: 100%;
+    margin-left: auto;
+    margin-top: 3rem;
+    transition: width .3s ease;
+
+}
+
+.dashboard-pages>div section {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    box-shadow: 0 0 5px #00000020;
+}
+
+.dashboard-pages .search-input {
+    display: flex;
+    padding: .7rem 1rem;
+    border-radius: 8px;
+    gap: 10px;
+    background-color: var(--lighter-blue);
+}
+
+.dashboard-pages .search-input input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.dashboard-pages .search-input>* {
+    display: block;
+    color: #333;
+}
+
+.dashboardDefault .previewCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #fff;
+    margin-top: 1rem;
+}
+
+.dashboardDefault .previewCard span {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    font-weight: 200;
+}
+
+.dashboardDefault .previewCard .right {
+    text-align: end;
+    line-height: .2;
+    text-transform: capitalize;
+}
+
+.dashboardDefault .previewCard.first span {
+    background-color: var(--light-blue);
+    color: var(--blue);
+
+}
+
+.dashboardDefault .previewCard.first .right h2 {
+    color: var(--blue);
+
+}
+
+.dashboardDefault .previewCard.second span {
+    background-color: var(--light-red);
+    color: var(--red);
+
+}
+
+.dashboardDefault .previewCard.second .right h2 {
+    color: var(--red);
+
+}
+
+.dashboardDefault .previewCard.third span {
+    background-color: var(--light-orange);
+    color: var(--orange);
+
+}
+
+.dashboardDefault .previewCard.third .right h2 {
+    color: var(--orange);
+
+}
+
+.dashboardDefault .previewCard.four span {
+    background-color: var(--light-green);
+    color: var(--green);
+
+}
+
+.dashboardDefault .previewCard.four .right h2 {
+    color: var(--green);
+
+}
+
+
+.jobs-table {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+thead tr {
+    color: var(--blue);
+    background: var(--lighter-blue);
+    padding: 10px;
+
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: start;
+    border-bottom: 1px solid #ddd;
+}
+
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+
+table .actions-btns span {
+    background: var(--lighter-blue);
+    margin-left: 10px;
+    padding: 1px 5px;
+    color: var(--blue);
+    border-radius: 5px;
+    text-align: center;
+}
+
+table .actions-btns span:hover {
+    background: var(--blue);
+    color: #fff;
+}
+
+.post-job {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+
+}
+
+.post-job form {
+    display: grid;
+    gap: 1rem;
+}
+
+label,
+input,
+select,
+option,
+textarea {
+    display: block;
+    width: 100%;
+}
+
+
+
+.company-applications select {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: var(--blue);
+    width: 100%;
+
+}
+
+.company-applications select option {
+    background-color: #fff;
+}
+
+
+
+.company-applications .application {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    flex-direction: column;
+    border: 1px solid #eee;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.applicationsPage .application .actions-btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.applicationsPage .actions-btns span {
+    cursor: pointer;
+    background-color: var(--lighter-blue);
+    padding: 5px;
+    border-radius: .2rem;
+    color: var(--dark-blue);
+    transition: background ease .2s;
+    margin: 5px;
+    display: block;
+}
+
+.applicationsPage .actions-btns span:hover {
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.company-applications .application .details>div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.company-applications .application p {
+    color: #777;
+}
+
+.applicationsPage .application .status span {
+    padding: 0 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.pending {
+    background-color: var(--orange);
+}
+
+.approved {
+    background-color: green;
+}
+
+.interviewing {
+    background-color: var(--blue);
+}
+
+.rejected {
+    background-color: #777;
+}
+
+
+
+.application.employee-application .actions-btns {
+    gap: .6rem;
+}
+
+.applicationsPage .applied-jobs {
+    width: 100%;
+
+}
+
+.applicationsPage table {
+    width: 100%;
+}
+
+.application.employee-application .title {
+    text-transform: capitalize;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.application.employee-application .date {
+    text-transform: capitalize;
+    font-size: medium;
+    color: #666;
+}
+
+.editProfileImg {
+    width: 5rem;
+}
+
+.editProfileImgInput {
+    color: var(--blue);
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+}
+
+.editImage {
+    border-radius: 8px;
+    height: 5rem;
+    width: 7rem;
+    position: relative;
+    border: .5px solid #999;
+}
+
+.editImage img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.removeImage {
+    margin-left: 5px;
+    font-size: 10px;
+    font-weight: thin;
+    color: var(--blue);
+    transition: background .5s ease;
+    cursor: pointer;
+    position: absolute;
+    background: #00000010;
+    border-radius: 5px;
+    top: 5px;
+}
+
+.removeImage:hover {
+    background: var(--blue);
+    color: #fff;
+}
+
+.formPage input,
+.formPage select,
+.formPage option,
+.formPage textarea {
+    padding: .7rem 1rem;
+    background-color: var(--lighter-blue);
+    border: none;
+    border-radius: 5px;
+    color: #777;
+    transition: background .8s ease;
+}
+
+.formPage input:focus,
+.formPage select:focus,
+.formPage textarea:focus,
+.formPage option:focus {
+    background: #fff;
+    outline: 1px solid var(--light-blue);
+}
+
+.formPage label {
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.formPage>section>div>div {
+    margin-bottom: 1rem;
+}
+
+.formPage button {
+    background-color: var(--blue);
+    border: none;
+    color: #fff;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.formPage button:hover {
+    background-color: var(--dark-blue);
+}
+
+.my-jobs .action-btns span {
+    color: var(--blue);
+
+}
+
+/* 
+=====================
+=====================
+END OF DASHBOARD PAGES
+=====================
+=====================
+*/

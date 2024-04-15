@@ -1,0 +1,18 @@
+:root{
+    /* colors */
+    --blue:  #1967D2;
+    --dark-blue: #0F5BC7;
+    --light-blue: #D3E0F5;
+    --lighter-blue: #F5F7FC;
+    --red: red;
+    --light-red: #FFEAEA;
+    --orange: #F9AB00;
+    --light-orange:rgb(253 241 215);
+    --green: green;
+    --light-green: #ECFDEC;
+    --dark-orange: #E39B02;
+    --text-color:  #333333;
+
+    /* font */
+    --primary-text: 14px;
+}

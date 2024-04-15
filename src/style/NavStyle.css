@@ -1,0 +1,321 @@
+@import "./variables.css";
+
+.nav {
+    background-color: #F8F8F8;
+    box-shadow: 0 2px 5px #00000020;
+    padding: .5rem 0;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    z-index: 9990;
+}
+
+.navCon {
+    width: 90vw;
+    margin: auto;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navLeft .logoDiv {
+
+    width: 50px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.navLeft h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--blue);
+    display: none;
+}
+
+@media screen and (min-width: 400px) {
+    .navLeft h3{
+        display: block;
+    }
+}
+
+
+
+/* nav middle */
+.navMiddle{
+    gap: 2rem;
+    display: none;
+   
+}
+
+.navMiddle a{
+    color: #555;
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navRight .pMenu {
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 2px;
+    transition: border .5s ease;
+}
+
+
+
+
+.navRight .menuIcon {
+    font-weight: 100;
+}
+
+.navUserIcon {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    position: relative;
+    cursor: pointer;
+    transition: color .5s ease;
+}
+
+.navUserIcon:hover .userDropdown {
+    display: block;
+}
+
+
+
+.navUserIcon:hover {
+    color: var(--blue);
+}
+
+.navUserIcon .userImg {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 2px solid var(--blue);
+    border-radius: 50%;
+}
+
+.navUserIcon img {
+    border-radius: inherit;
+}
+
+.userDropdown {
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    right: 0;
+    box-shadow: 0 0 5px #00000020;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: display .5s ease;
+}
+
+.userDropdown a {
+    display: flex;
+    gap: .6rem;
+    padding: .5rem 1rem;
+    width: 100%;
+    align-items: center;
+    text-wrap: nowrap;
+
+}
+
+.userDropdown a:hover {
+    background: var(--lighter-blue);
+}
+
+.headerCta a{
+    display: none;
+    color: #fff;
+    background: var(--blue);
+    padding: .8rem 2rem;
+    border-radius: 5px;
+}
+
+.guestUseAuths{
+    display: none;
+    gap: 1rem;
+}
+
+.guestUseAuths a{
+    padding: .5rem 1.5rem;
+    background: var(--light-blue); 
+    border-radius: 5px;  
+    transition: background .5s ease;
+}
+
+.guestUseAuths a:hover{
+    color: #fff;
+    background-color: var(--blue);
+}
+
+.guestUseAuths a.signup{
+    background-color: var(--blue);
+    color: #fff;
+}
+
+.guestUseAuths a.signup:hover{
+    background: var(--dark-blue);
+}
+
+
+
+/* nav tablet */
+@media screen and (min-width: 600px) {}
+
+
+@media screen and (min-width: 767px) {}
+
+
+@media screen and (min-width: 1000px) {
+    .nav .navCon {
+        min-width: 90vw;
+        
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .pMenu {
+        display: none;
+    }
+
+    .navMiddle{
+        display: flex;
+    }
+    
+    .headerCta a{
+        display: block;
+    }
+
+    .guestUserIcon{
+        display: none;
+    }
+
+    .guestUseAuths{
+        display: flex;
+    }
+}
+
+/* end of nav tablet */
+
+
+/*
+================
+================
+VERTICAL NAV
+===============
+===============
+*/
+
+
+
+.navBackdrop {
+    position: fixed;
+    background: #00000020;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    top: 0;
+    z-index: 99999;
+    cursor: no-drop;
+    transition: width .6s ease;
+}
+
+.verticalNavCon {
+    overflow: hidden;
+    transition: width 2s ease;
+    height: 100%;
+    width: fit-content;
+    cursor: default;
+    max-width: 80%;
+}
+
+.verticalNavCon .siteInfo {
+    color: #CECCCC;
+    margin: 2rem 0;
+}
+
+.navBackdrop>div .header {
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBackdrop .header .logo {
+    width: 40px;
+}
+
+.navBackdrop .header .icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navBackdrop .header a {
+    color: #333;
+}
+
+.navBackdrop .header .icons .icon {
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.navBackdrop .header .icons .icon:hover {
+    color: var(--blue);
+}
+
+.verticalNav {
+    padding: 2rem;
+    background: #202124;
+    height: 100%;
+}
+
+.verticalNav .links {
+    margin-bottom: 3rem;
+}
+
+
+.verticalNav .links a {
+    color: #CECCCC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: color .5s ease;
+}
+
+.verticalNav .links a:hover {
+    color: #fff;
+}
+
+.verticalNav button {
+    border: none;
+    background: var(--blue);
+    width: 100%;
+}
+
+.verticalNav button:hover {
+    background: var(--dark-blue);
+}
+
+.verticalNav button a {
+    padding: .5rem 1rem;
+    width: 100%;
+    display: block;
+    color: #fff;
+}
+
+
+
+.showVerticalNav {
+    width: 100% !important;
+}

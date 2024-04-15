@@ -1,0 +1,292 @@
+/* 
+=======================
+=======================
+TABLET ==> (767px)
+=======================
+=======================
+*/
+
+@media screen and (min-width: 600px) {
+    .howItWorks .slides{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* .grid{
+        grid-template-columns: repeat(2, 1fr);
+    } */
+
+     /* SINGLE PAGE */
+     .single-page .card{
+        flex-direction: row !important;
+        text-align: start !important;
+    }
+
+    .single-page .card-details{
+        justify-content: start !important;
+    }
+    
+    
+    .single-page .card-middle{
+
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+    /* END OF SINGLE PAGE */
+
+    .single-company .header-con{
+        flex-direction: row !important;
+    }
+    
+    .single-company .header-left{
+        flex-direction: row !important;
+        align-items: start !important;
+        text-align: start !important;
+    }
+
+    
+    
+
+   
+}
+
+@media screen and (min-width: 767px) {
+
+   nav .nav-right .menu-icon{
+        display: none;
+    }
+
+    nav{
+        background: var(--lighter-blue) !important;
+    }
+
+    nav .nav-con .lp-nav-links{
+        display: flex;
+        height: fit-content;
+        position: static;
+        box-shadow: none;
+        background: transparent;
+        padding: 0;
+        width: fit-content;
+    }
+
+    nav .nav-con .nav-links{
+        display: none;
+    }
+
+
+    .hero-left h3 {
+        font-size: 2.3rem;
+    }
+
+    .hero-left .hero-search {
+        flex-direction: row;
+        padding: .3rem 1rem;
+    }
+
+    .hero-left .hero-search button {
+        width: 30%;
+        padding: .5rem 1rem;
+    }
+
+    .hero .hero-title-search {
+        border: none;
+    }
+
+
+    .howItWorks .slides{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+
+    /* GRID */
+    .grid{
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+    }
+    /* END OF GRID */
+
+
+    .single-company .body-con{
+        flex-direction: row !important;
+    }
+
+    .single-company .body-con main{
+        width: 60% ;
+    }
+
+
+    .company-body aside{
+        width: auto !important;
+    }
+
+    .company-applications .applicationsHeader{
+        flex-direction: row !important;
+    }
+
+    .company-applications .application{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .form.login .con{
+        flex-direction: row !important;
+        align-items: center;
+    }
+
+    .form.login .loginLeft{
+        display: block;
+        width: 50%;
+    }
+   
+
+
+}
+
+
+
+/* 
+=======================
+=======================
+END OF TABLET 
+=======================
+=======================
+*/
+
+
+
+/* 
+=======================
+=======================
+TABLET ==> (870px)
+=======================
+=======================
+*/
+
+@media screen and (min-width: 870px) {
+    
+    
+
+    .hero .hero-con {
+        display: flex;
+    }
+
+    .hero-left .hero-search button {
+        width: 50%;
+        padding: .5rem 1rem;
+    }
+
+    .hero-right {
+        display: block !important;
+    }
+
+    .post-job form{
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1rem;
+    }
+
+    .single-employee .employeeHeader .employeeHeaderCon{
+       flex-direction: row;
+       justify-content: space-between;
+    }
+
+    .single-employee .employeeHeader .employeeDetails{
+        flex-direction: row;
+        gap: 1rem;
+        text-align: start;
+    }
+
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    
+    
+
+    
+}
+
+
+
+
+/* 
+=======================
+=======================
+END OF TABLET ==> (870px)
+=======================
+=======================
+*/
+
+
+
+
+/* 
+=======================
+=======================
+TABLET 2 ==> (992px)
+=======================
+=======================
+*/
+
+
+
+@media screen and (min-width: 992px) {
+    .dashboardNav {
+        width: 28% !important;
+        padding: 1rem 0;
+    }
+
+    .dashboard-pages{
+        width: 70%;
+    }
+
+    .smallDashboardNav{
+        width: 0 !important;
+    }
+
+
+    .single-employee .employeeBody .employeeBodyCon{
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .single-employee .employeeBody .employeeMain{
+        width: 70%;
+    }
+
+    .single-employee .employeeBody aside{
+        width: auto;
+    }
+
+    .jobs section aside{
+        width: 35% !important;
+        margin-right: 2rem;
+    }
+
+    .jobs .search{
+        display: none !important;
+    }
+
+    .jobs .filterToggler{
+        display: none;
+    }
+
+    
+
+    
+}
+
+
+/* 
+=======================
+=======================
+END OF TABLET ==> (992px)
+=======================
+=======================
+*/
+
+@media screen and (min-width: 1250px) {
+    .single-employee .employeeHeader .employeeHeaderCon
+    ,.employeeBody .employeeBodyCon{
+        min-width: 95vw;
+    }
+}

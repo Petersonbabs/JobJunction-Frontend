@@ -1,0 +1,81 @@
+@import "./variables.css";
+
+.featured-employees{
+    width: 90vw;
+    margin: auto;
+    display: grid;
+    gap: 1.2rem;
+    max-width: 1000px;
+}
+
+.featured-employees .employee{
+    display: flex;
+    border: 1px solid #ddd;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    padding: .6rem;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
+.featured-employees .employee h3{
+    font-size: 1.2rem;
+}
+
+.featured-employees .employee .left .detail>div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: small;
+    
+}
+
+.featured-employees .employee .left .detail>div span{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.featured-employees .left{
+    display: flex;
+    gap: 1rem;
+}
+
+.featured-employees .left .img{
+    border-radius: 50%;
+    width: 5rem;
+}
+
+.featured-employees .left .img img{
+    border-radius: inherit;
+    width: 100%;
+}
+
+
+.featured-employees .employee button{
+    border: none;
+    background: var(--light-blue);
+    padding: .5rem 1rem;
+    border-radius: 8px;
+    color: var(--blue);
+    transition: background .5s ease;
+    cursor: default;
+    font-size: small;
+}
+
+.featured-employees .employee:hover button{
+    background-color: var(--blue);
+    color: #fff;
+}
+
+
+
+
+
+@media screen and (min-width: 990px) {
+    .featured-employees{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
