@@ -68,6 +68,8 @@ a{
 }
 nav{
     box-shadow: 0 0 5px #00000040;
+    display: none;
+    
 }
 
 nav a {
