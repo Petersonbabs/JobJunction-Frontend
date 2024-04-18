@@ -173,8 +173,7 @@ DASHBOARD PAGES
 
 .dashboard-pages {
     padding: 1rem;
-    width: 93%;
-    /* width: 100%; */
+    width: 100%;
     margin-left: auto;
     margin-top: 3rem;
     transition: width .3s ease;
