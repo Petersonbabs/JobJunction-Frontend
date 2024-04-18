@@ -960,9 +960,7 @@ HOME CATEGORIES
 
 
 .job-categories {
-    display: none !important;
-    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
-    /* grid-gap: 20px; */
+    display: grid;
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
@@ -979,7 +977,9 @@ HOME CATEGORIES
 }
 
 .category {
+
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 20px;
     border-radius: 10px;
@@ -987,6 +987,16 @@ HOME CATEGORIES
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
+
+
+@media (min-width: 680px) {
+    .home .job-categories {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    
+}
+
 
 .category:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
