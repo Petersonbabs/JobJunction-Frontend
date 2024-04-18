@@ -43,7 +43,6 @@ const JobCategories = () => {
         fetchCategoriesWithJobCounts();
     }, []);
 
-    console.log(countedCategories)
 
     const icons = [
         { icon: 'fa-laptop' },

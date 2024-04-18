@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import menInSuit from "./../../assets/man-in-suit.png"
 import Slider from '../../components/Slider'
 import { UseJobContext } from "../../contexts/JobContext"
+
 // import { Grid, Typography } from '@mui/material'
 import Grid from '../../components/Grid'
 import Card from '../../components/Card'
