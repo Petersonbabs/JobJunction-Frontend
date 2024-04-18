@@ -236,7 +236,7 @@ TABLET 2 ==> (992px)
     }
 
     .dashboard-pages{
-        width: 70%;
+        width: 70% !important;
     }
 
     .smallDashboardNav{

@@ -174,7 +174,7 @@ DASHBOARD PAGES
 .dashboard-pages {
     padding: 1rem;
     width: 93%;
-    width: 100%;
+    /* width: 100%; */
     margin-left: auto;
     margin-top: 3rem;
     transition: width .3s ease;
@@ -447,6 +447,12 @@ textarea {
 .applicationsPage .applied-jobs {
     width: 100%;
     overflow: auto;
+}
+
+@media (min-width: 768px) {
+    .applicationsPage .applied-jobs {
+        overflow: unset !important;
+    }
 }
 
 .applicationsPage table {
