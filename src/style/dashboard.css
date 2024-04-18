@@ -446,7 +446,7 @@ textarea {
 
 .applicationsPage .applied-jobs {
     width: 100%;
-
+    overflow: auto;
 }
 
 .applicationsPage table {

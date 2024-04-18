@@ -964,6 +964,7 @@ HOME CATEGORIES
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
+    gap: 1rem;
 }
 
 .home .categories {
