@@ -104,7 +104,6 @@ nav .menu a{
 .nav-links {
     position: absolute;
     top: 100%;
-    display: none;
     background: #fff;
     width: 100%;
     border-radius: 5px;
